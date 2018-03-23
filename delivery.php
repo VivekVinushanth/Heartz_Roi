@@ -9,10 +9,10 @@
 	
 	<form>
 		<input type="radio" name="delivery_method" value="cnt" id="1"> Come and take medicine<br>
-		<input type="radio" name="delivery_method" value="dmh" id="2"> Deliver medicine to home<br>
-		<div id="addr" hidden>
+		<input type="radio" name="delivery_method" value="dmh" id="2" <?php if( $_GET['dmethod']=='dmh'){echo 'checked';};?>> Deliver medicine to home<br>
+		<div id="addr" <?php if( $_GET['dmethod']!='dmh'){echo 'hidden';};?>>
 			Address:
-			<input type="text" name="address" id="ad"><p id="demo"></p>
+			<input type="text" name="address" id="ad" value=<?php echo $_GET['addr'];?>><p id="demo"></p>
 		</div>
 	</form>
 	<button onclick="back()">Back</button>

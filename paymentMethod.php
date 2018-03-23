@@ -44,7 +44,7 @@
 	}
 	function back(){
 
-		window.location.href="delivery.php?"+"<?php echo $p?>";
+		window.location.href="delivery.php?"+"<?php echo $p?>"+"&addr="+"<?php echo $q?>"+"&dmethod="+"<?php echo $r?>";
 	}
 
 	</script>

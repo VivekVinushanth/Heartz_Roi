@@ -40,6 +40,8 @@ th, td {
 	    	echo "<td>".$row["Doctor"]."</td>";
 	    	echo "<td>".$row["PrescriptionNo"]."</td>";
 	    	echo "<input type='hidden' name='pNo' value='".$row["PrescriptionNo"]."' >";
+	    	echo "<input type='hidden' name='addr' value=''>";
+	    	echo "<input type='hidden' name='dmethod' value=''>";
 	    	echo "<td><input type='submit' value='Select'></td>";
 	        echo "</tr>";
 	        echo "</form>";
